@@ -1,0 +1,57 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~bootstrap/scss/bootstrap';
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    label {
+        font-weight: bold;
+        color: #ED7839;
+        font-family: sans-serif;
+    }
+
+    input {
+        border: 1px solid #c2c2c2;
+        height: 30px;
+        border-radius: 2px;
+    }
+
+    textarea {
+        border: 1px solid #c2c2c2;
+        height: 30px;
+        border-radius: 2px;
+        min-height: 70px;
+    }
+}
+
+button {
+    background-image: linear-gradient(#FEB254, #F0813D);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px 1px #c2c2c2;
+    cursor: pointer;
+
+    &:hover {
+        transition: 0.3s;
+        opacity: 0.8;
+    }
+}
+
+h3  {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.active {
+    background: #FDF1EB;
+    border-left: 4px solid #FFB455;
+    transition: 0.1s;
+}
+
+.orange {
+    color: #ed7839 !important;
+}

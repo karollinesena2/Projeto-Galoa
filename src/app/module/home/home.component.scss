@@ -1,0 +1,58 @@
+.container-main {
+  display: flex;
+  justify-content: space-between;
+
+  .container-scroll {
+    overflow-y: scroll;
+    height: 225px;
+
+  }
+
+  .evento-img {
+    background-image: url('./../../../assets/img/PodioCrossfit.jpeg');
+    background-repeat: no-repeat;
+    width: 500px;
+  }
+
+}
+
+.container-dv {
+  margin: 20px 0;
+}
+
+.card-home {
+  color: #ed7839;
+  border-radius: 3px;
+
+  h3 {
+    text-align: center;
+  }
+}
+
+.btn-avalia {
+  display: flex;
+
+  button {
+    margin: 0 auto;
+  }
+}
+
+hr {
+  border: 1px solid #e7e7e7;
+}
+
+.btn-send {
+  text-align: end;
+  margin-right: 5px;
+}
+
+.list-card {
+  padding: 10px;
+}
+
+.btn-show-text {
+  color: #ed7839;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}

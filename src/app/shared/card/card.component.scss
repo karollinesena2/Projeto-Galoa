@@ -1,0 +1,22 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px 2px #c2c2c2;
+
+    div:first-child {
+        background: #FDF1EB;
+        color: #4E4E4E;
+        border-bottom: 1px solid #ECECEC;
+        max-height: 50px;
+
+        h3{
+            margin: 10px;
+            font-family: sans-serif;
+        }
+    }
+    
+    .content-card {
+        padding: 5px;
+        color: #4D4D4D;
+    }
+}
