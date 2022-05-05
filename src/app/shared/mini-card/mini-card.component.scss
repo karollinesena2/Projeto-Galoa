@@ -1,0 +1,31 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px 2px #c2c2c2;
+    border-radius: 3px;
+
+    div:first-child {
+        color: #ED7839;
+
+        h4{
+            margin: 10px;
+            font-family: sans-serif;
+        }
+    }
+    
+    .content-card {
+        padding: 5px;
+        color: #4D4D4D;
+        margin-left: 5px;
+    }
+
+    .footer-card {
+        display: flex;
+        margin: 5px 10px;
+
+        a:first-child {
+            cursor: pointer;
+            margin-right: 5px;
+        }
+    }
+}

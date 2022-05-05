@@ -1,0 +1,45 @@
+.navbar-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    background-image: linear-gradient(#FEB254, #F0813D);
+    height: 60px;
+
+    h1 {
+        color: #fff;
+        font-family: sans-serif;
+        margin-top: 0;
+    }
+}
+
+.navbar-img {
+    margin-top: 15px;
+
+    img {
+        width: 80%;
+    }
+}
+
+.navbar-menu {
+
+    div {
+        
+        cursor: pointer;
+        p {
+            padding: 15px 0 0px 15px;
+            font-family: sans-serif;
+            color: #725C5C;
+
+        }
+    
+        hr {
+            border: 1px solid #c2c2c2;
+            margin-bottom: 0 !important;
+        }
+
+        &:hover {
+            background: #FDF1EB;
+            transition: 0.1s;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+<div class="card-container">
+  <div>
+    <h4>{{ resumoCard == null ? "Sem assunto" : resumoCard }}</h4>
+  </div>
+  <div class="content-card">
+    {{ contentCard == null ? "Sem conteúdo" : contentCard }}
+  </div>
+  <div class="row">
+    <div class="footer-card">
+      <a (click)="likeCount()">
+        <i class="fa-regular fa-heart"></i>
+      </a>
+      <a>{{ countLikes }} like</a>
+    </div>
+   
+  </div>
+</div>

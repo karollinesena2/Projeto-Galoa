@@ -1,0 +1,57 @@
+<div>
+  <div class="container-main">
+    <div class="evento-img">
+    </div>
+    <div >
+    <app-card [titleCard]="titleMainCard">
+      <div class="container-scroll" [innerHTML]="textForMainCard"></div>
+    </app-card>
+  </div>
+  </div>
+  <div class="container-dv">
+    <app-card [titleCard]="titleForFirstCard">
+      <div [innerHTML]="textForFirstCard"></div>
+      <a *ngIf="!hideBtn" (click)="showTotalString()" class="btn-show-text">ver mais..</a>
+    </app-card>
+  </div>
+  <div>
+    <app-card [titleCard]="title">
+      <div *ngIf="!showForm" class="card-home">
+        <h3>{{ titleCard }}</h3>
+      </div>
+      <div *ngIf="!showForm" class="btn-avalia">
+        <button type="button" (click)="openForm()">Deixar avaliação</button>
+      </div>
+      <hr />
+      <div *ngIf="showForm" class="form">
+        <form [formGroup]="form">
+          <div class="row">
+            <div class="form-group">
+              <label>Resumo</label>
+              <input type="text" formControlName="resumo" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <label>Avaliação</label>
+              <textarea formControlName="avaliacao"></textarea>
+            </div>
+          </div>
+
+          <div class="btn-send">
+            <button type="button" (click)="sendAvaliacao()">
+              <span>Enviar</span>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="list-card" *ngFor="let item of avaliacaoList">
+        <app-mini-card
+          [resumoCard]="item.resumo"
+          [contentCard]="item.avaliacao"
+        ></app-mini-card>
+      </div>
+    </app-card>
+  </div>
+</div>
