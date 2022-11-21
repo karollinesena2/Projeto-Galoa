@@ -1,6 +1,7 @@
-# GaloaTeste
+# Projeto Web - Pagina Web 
 
 - Projeto utilizando a linguagem Typescript no Framework Angular + Bootstrap;
+- Projeto sobre Crossfit.  
 
 # Utilizei meus conhecimentos para aplicar
 
